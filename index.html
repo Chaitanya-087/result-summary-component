@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+    <title>Results summary component</title>
+  </head>
+  <body>
+    <main>
+      <article class="article">
+        <section class="result-section">
+          <h2 class="section-title">Your Result</h2>
+          <div class="result-container">
+            <h1 class="total-score" id="total-score">76</h1>
+            <span class="out-of">of 100</span>
+          </div>
+          <div class="summary">
+            <h3 class="summary-title">Great</h3>
+            <p class="summary-text">
+              You scored higher than 65% of the people who have taken these
+              tests
+            </p>
+          </div>
+        </section>
+
+        <section class="summary-section">
+          <p class="section-title">Summary</p>
+          <div class="score-wrapper">
+            <div class="score-container" style="--clr-score:0, 100%, 67%" >
+              <img src="./assets/images/icon-reaction.svg" alt="reaction" />
+              <h4 class="score-title">Reaction</h4>
+              <p class="score-value">80 / <span class="out-of">100</span></p>
+            </div>
+            <div class="score-container" style="--clr-score:39, 100%, 56%">
+              <img src="./assets/images/icon-memory.svg" alt="memory" />
+              <h4 class="score-title">Memory</h4>
+              <p class="score-value">92 / <span class="out-of">100</span></p>
+            </div>
+            <div class="score-container" style="--clr-score:166, 100%, 37%">
+              <img src="./assets/images/icon-verbal.svg" alt="verbal" />
+              <h4 class="score-title">Verbal</h4>
+              <p class="score-value">61 / <span class="out-of">100</span></p>
+            </div>
+            <div class="score-container" style="--clr-score:234, 85%, 45%">
+              <img src="./assets/images/icon-visual.svg" alt="visual" />
+              <h4 class="score-title">Visual</h4>
+              <p class="score-value">72 / <span class="out-of">100</span></p>
+            </div>
+          </div>
+          <button class="continue-btn" type="button" title="continue">Continue</button>
+        </section>
+      </article>
+    </main>
+  </body>
+</html>
